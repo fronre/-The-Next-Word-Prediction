@@ -1,0 +1,5 @@
+env/
+*.pyd
+*.h5
+*.pickle
+__pycache__/

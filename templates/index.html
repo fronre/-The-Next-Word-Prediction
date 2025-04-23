@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Word Prediction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #2d2a45, #14111f);
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    header {
+      width: 100%;
+      background: #1a1a2f;
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      color: #bb86fc;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #dcdcdc;
+      text-decoration: none;
+      font-size: 1.1em;
+      margin: 0 20px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #bb86fc;
+    }
+
+    .cta-text {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #dcdcdc;
+    }
+
+    .button-container {
+      margin-top: 50px;
+    }
+
+    button {
+      padding: 12px 40px;
+      background-color: #bb86fc;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.2em;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #9a6eff;
+      transform: scale(1.05);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: #1a1a2f;
+      padding: 15px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #bbb;
+    }
+
+    .hero-image {
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .project-description {
+      max-width: 800px;
+      margin-top: 60px;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      text-align: left;
+    }
+
+    .project-description h2 {
+      color: #bb86fc;
+      font-size: 2em;
+    }
+
+    .project-description p {
+      font-size: 1.1em;
+      color: #dcdcdc;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5em;
+      }
+
+      .button-container {
+        margin-top: 40px;
+      }
+
+      nav a {
+        font-size: 1em;
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- هيدر -->
+  <header>
+    <h1>Smart Word Prediction</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/articles">Articles</a>
+      <a href="/predict">Prediction</a>
+    </nav>
+    <p class="cta-text">Enhance your writing with AI-powered predictions!</p>
+  </header>
+
+  <!-- شرح المشروع -->
+  <div class="project-description">
+    <h2>About Our Project</h2>
+    <p>
+      This project is designed to predict the next word based on the input text you provide. By leveraging advanced machine learning techniques, 
+      specifically natural language processing (NLP), we have developed an AI-powered model that understands context
